@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>How to Use Midjourney for Beginners 2026 — NeuralVault</title>
+<meta name="description" content="Complete beginner's guide to Midjourney 2026. Learn how to write prompts, generate stunning AI art, and get professional results from day one."/>
+<meta name="keywords" content="how to use Midjourney, Midjourney beginners guide 2026, Midjourney tutorial, Midjourney prompts guide, AI art beginners"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+body{background:#0A0A0A;color:#fff;font-family:'Inter',sans-serif;line-height:1.7}
+a{color:#6C5CE7;text-decoration:none}
+a:hover{text-decoration:underline}
+nav{background:rgba(10,10,10,.95);border-bottom:1px solid #1F1F1F;padding:18px 40px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:100;backdrop-filter:blur(20px)}
+.nl{display:flex;align-items:center;gap:10px;text-decoration:none}
+.ni{width:30px;height:30px;border-radius:7px;background:linear-gradient(135deg,#6C5CE7,#00E5FF);display:flex;align-items:center;justify-content:center;font-size:13px;font-weight:700;color:#fff}
+.nn{font-size:16px;font-weight:700;color:#fff}
+.nn span{background:linear-gradient(135deg,#6C5CE7,#00E5FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.nb{font-size:13px;color:#A1A1AA;text-decoration:none}
+.nb:hover{color:#fff}
+.hero{max-width:800px;margin:0 auto;padding:60px 24px 40px}
+.tag{display:inline-flex;align-items:center;background:rgba(108,92,231,.15);border:1px solid rgba(108,92,231,.3);color:#6C5CE7;font-size:11px;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:5px 14px;border-radius:50px;margin-bottom:20px}
+.h1{font-size:clamp(28px,5vw,46px);font-weight:800;line-height:1.15;letter-spacing:-.03em;margin-bottom:18px}
+.h1 span{background:linear-gradient(135deg,#6C5CE7,#00E5FF);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.meta{display:flex;align-items:center;gap:16px;font-size:12.5px;color:#A1A1AA;margin-bottom:32px;flex-wrap:wrap}
+.dot{width:4px;height:4px;background:#A1A1AA;border-radius:50%}
+.intro{font-size:16px;color:#A1A1AA;line-height:1.85;padding:24px;background:#111;border-left:3px solid #6C5CE7;border-radius:0 12px 12px 0;margin-bottom:40px}
+.c{max-width:800px;margin:0 auto;padding:0 24px 80px}
+.c h2{font-size:24px;font-weight:700;margin:40px 0 14px;color:#fff}
+.c h3{font-size:19px;font-weight:600;margin:28px 0 10px;color:#fff}
+.c p{font-size:15px;color:#A1A1AA;line-height:1.85;margin-bottom:16px}
+.c ul,.c ol{padding-left:22px;margin-bottom:16px}
+.c li{font-size:14.5px;color:#A1A1AA;line-height:1.8;margin-bottom:7px}
+.c strong{color:#fff}
+.step{background:#111;border:1px solid #1F1F1F;border-radius:12px;padding:24px;margin:20px 0;border-left:3px solid #6C5CE7}
+.step-num{font-size:11px;font-weight:700;letter-spacing:.1em;color:#6C5CE7;text-transform:uppercase;margin-bottom:8px}
+.step-title{font-size:17px;font-weight:700;color:#fff;margin-bottom:10px}
+.step-text{font-size:14px;color:#A1A1AA;line-height:1.75}
+.prompt-box{background:#0d0d0d;border:1px solid #2a2a2a;border-radius:10px;padding:20px;margin:16px 0;font-family:'Courier New',monospace;font-size:13px;color:#00E5FF;line-height:1.6}
+.prompt-label{font-size:10px;font-weight:700;letter-spacing:.15em;color:#A1A1AA;text-transform:uppercase;margin-bottom:8px;font-family:'Inter',sans-serif}
+.hl{background:linear-gradient(135deg,rgba(108,92,231,.1),rgba(0,229,255,.05));border:1px solid rgba(108,92,231,.25);border-radius:12px;padding:22px;margin:24px 0}
+.hl h3{font-size:15px;font-weight:700;color:#fff;margin-bottom:8px}
+.hl p{font-size:14px;color:#A1A1AA;margin:0;line-height:1.7}
+.tbl{width:100%;border-collapse:collapse;margin:24px 0;border-radius:10px;overflow:hidden}
+.tbl th{background:#1F1F1F;color:#fff;font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:12px 16px;text-align:left}
+.tbl td{background:#111;color:#A1A1AA;font-size:13px;padding:11px 16px;border-bottom:1px solid #1F1F1F}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr:hover td{background:#161616}
+.ga{color:#6C5CE7!important;font-weight:600}
+.gb{color:#22c55e!important;font-weight:600}
+.conc{background:#111;border:1px solid #1F1F1F;border-radius:12px;padding:28px;margin:36px 0}
+.conc h2{font-size:20px;font-weight:700;margin-bottom:12px}
+.conc p{font-size:14.5px;color:#A1A1AA;line-height:1.8;margin-bottom:0}
+.cta-wrap{text-align:center;margin:32px 0}
+.cta-btn{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,#6C5CE7,#00E5FF);color:#fff;padding:13px 28px;border-radius:8px;font-size:13px;font-weight:600;text-decoration:none}
+.cta-btn:hover{opacity:.9;text-decoration:none}
+.ft{background:#111;border-top:1px solid #1F1F1F;padding:36px 24px;text-align:center}
+.ft p{font-size:13px;color:#A1A1AA;margin-bottom:12px}
+.an{font-size:11.5px;color:#52525b;text-align:center;padding:14px 24px;border-top:1px solid #1F1F1F}
+@media(max-width:600px){nav{padding:14px 18px}.hero,.c{padding-left:18px;padding-right:18px}}
+</style>
+</head>
+<body>
+<nav>
+  <a href="/" class="nl"><div class="ni">NV</div><span class="nn">Neural<span>Vault</span></span></a>
+  <a href="/" class="nb">← Back to Directory</a>
+</nav>
+<div class="hero">
+  <div class="tag">🎨 Beginner Guide</div>
+  <h1 class="h1">How to Use Midjourney <span>for Beginners 2026</span></h1>
+  <div class="meta"><span>NeuralVault Editorial</span><span class="dot"></span><span>March 15, 2026</span><span class="dot"></span><span>9 min read</span></div>
+  <div class="intro">Midjourney is the most powerful AI image generator available today — but getting started can feel overwhelming. This complete beginner's guide walks you through everything from account setup to writing prompts that produce stunning results every single time. By the end of this article you will be creating professional-quality AI artwork confidently.</div>
+</div>
+<div class="c">
+  <h2>What is Midjourney?</h2>
+  <p>Midjourney is an AI image generation tool that creates stunning visuals from text descriptions called prompts. You describe what you want to see, and Midjourney produces four image options within about a minute. The quality is consistently remarkable — producing everything from photorealistic portraits to abstract art, architectural concepts, and product mockups.</p>
+  <p>Unlike some competitors, Midjourney runs through Discord, the popular messaging platform. This makes it slightly different from typical web apps, but once you understand the workflow it becomes second nature.</p>
+
+  <h2>Step-by-Step Setup Guide</h2>
+  <div class="step"><div class="step-num">Step 01</div><div class="step-title">Create a Discord Account</div><div class="step-text">Go to discord.com and sign up for a free account. You need this to access Midjourney. The process takes about two minutes — just enter your email, create a username, and verify your account.</div></div>
+  <div class="step"><div class="step-num">Step 02</div><div class="step-title">Join the Midjourney Server</div><div class="step-text">Go to midjourney.com and click "Join the Beta". This takes you directly to the official Midjourney Discord server. Accept the invite and you are in. Browse the channels to get a feel for what others are creating.</div></div>
+  <div class="step"><div class="step-num">Step 03</div><div class="step-title">Subscribe to a Plan</div><div class="step-text">Midjourney requires a paid subscription starting at $10 per month. Go to midjourney.com/account and choose your plan. The Basic plan at $10/mo gives you 200 image generations per month — more than enough to learn and experiment.</div></div>
+  <div class="step"><div class="step-num">Step 04</div><div class="step-title">Find a Newbies Channel</div><div class="step-text">Inside the Midjourney Discord server, look for channels named "newbies-1", "newbies-2", etc. in the left sidebar. These are where beginners generate images. Click on any newbies channel to start.</div></div>
+  <div class="step"><div class="step-num">Step 05</div><div class="step-title">Write Your First Prompt</div><div class="step-text">In the message box at the bottom, type /imagine followed by a space and your description. For example: /imagine a golden retriever puppy sitting in a field of sunflowers, warm afternoon light, photorealistic. Press Enter and wait about 60 seconds for your images.</div></div>
+
+  <h2>How to Write Great Prompts</h2>
+  <p>The quality of your results depends almost entirely on the quality of your prompt. A well-written prompt consistently produces stunning images while a vague prompt produces mediocre ones.</p>
+
+  <h3>Basic Prompt Structure</h3>
+  <p>A good Midjourney prompt follows this structure:</p>
+  <div class="prompt-box">
+    <div class="prompt-label">Prompt Formula</div>
+    [Subject] + [Setting/Environment] + [Style] + [Lighting] + [Camera/Mood]
+  </div>
+
+  <h3>Example Prompts — Before and After</h3>
+  <div class="prompt-box">
+    <div class="prompt-label">❌ Weak Prompt</div>
+    a cat
+  </div>
+  <div class="prompt-box">
+    <div class="prompt-label">✅ Strong Prompt</div>
+    a majestic white persian cat sitting on a velvet throne, royal palace background, dramatic studio lighting, photorealistic, 8k, sharp focus, cinematic mood
+  </div>
+  <div class="prompt-box">
+    <div class="prompt-label">❌ Weak Prompt</div>
+    a house
+  </div>
+  <div class="prompt-box">
+    <div class="prompt-label">✅ Strong Prompt</div>
+    modern minimalist house with floor-to-ceiling windows, surrounded by pine trees, snow-covered mountains in background, golden hour lighting, architectural photography style, ultra realistic
+  </div>
+
+  <h2>Essential Midjourney Commands</h2>
+  <table class="tbl">
+    <thead><tr><th>Command</th><th>What it Does</th><th>Example</th></tr></thead>
+    <tbody>
+      <tr><td><strong>/imagine</strong></td><td>Generate images from prompt</td><td>/imagine a sunset over the ocean</td></tr>
+      <tr><td><strong>--ar</strong></td><td>Set aspect ratio</td><td>--ar 16:9 for widescreen</td></tr>
+      <tr><td><strong>--v 6</strong></td><td>Use latest model version</td><td>--v 6 at end of prompt</td></tr>
+      <tr><td><strong>--style raw</strong></td><td>More photorealistic output</td><td>--style raw for photos</td></tr>
+      <tr><td><strong>--q 2</strong></td><td>Higher quality render</td><td>--q 2 for best quality</td></tr>
+      <tr><td><strong>--no</strong></td><td>Exclude elements</td><td>--no blur, --no text</td></tr>
+      <tr><td><strong>U1-U4</strong></td><td>Upscale an image</td><td>Click U1 to upscale first image</td></tr>
+      <tr><td><strong>V1-V4</strong></td><td>Create variations</td><td>Click V2 for variations of image 2</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Style Keywords That Transform Your Images</h2>
+  <p>Adding the right style keywords to your prompt dramatically improves results. Here are the most powerful ones to add:</p>
+  <h3>For Photography Style</h3>
+  <div class="prompt-box"><div class="prompt-label">Photography Keywords</div>photorealistic, DSLR, 85mm lens, shallow depth of field, bokeh, golden hour, studio lighting, 8k resolution</div>
+  <h3>For Artistic Style</h3>
+  <div class="prompt-box"><div class="prompt-label">Art Style Keywords</div>oil painting, watercolor, digital art, concept art, illustration, anime style, Studio Ghibli, comic book style</div>
+  <h3>For Cinematic Style</h3>
+  <div class="prompt-box"><div class="prompt-label">Cinematic Keywords</div>cinematic, movie still, dramatic lighting, anamorphic lens, film grain, blockbuster, epic composition</div>
+
+  <div class="hl"><h3>💡 Pro Tip — The Magic Words</h3><p>Add these four words to almost any prompt and watch the quality jump: <strong>highly detailed, professional, award winning, trending on ArtStation.</strong> These signal to Midjourney that you want exceptional quality output.</p></div>
+
+  <h2>Midjourney Pricing Plans 2026</h2>
+  <table class="tbl">
+    <thead><tr><th>Plan</th><th>Price</th><th>Generations/mo</th><th>Best For</th></tr></thead>
+    <tbody>
+      <tr><td><strong>Basic</strong></td><td>$10/mo</td><td>~200 images</td><td>Beginners</td></tr>
+      <tr><td><strong>Standard</strong></td><td>$30/mo</td><td>~900 images</td><td>Regular creators</td></tr>
+      <tr><td><strong>Pro</strong></td><td>$60/mo</td><td>~1800 images</td><td>Professional use</td></tr>
+      <tr><td><strong>Mega</strong></td><td>$120/mo</td><td>Unlimited fast</td><td>Agencies</td></tr>
+    </tbody>
+  </table>
+
+  <h2>Common Beginner Mistakes to Avoid</h2>
+  <ul>
+    <li><strong>Prompts too short</strong> — Give Midjourney detail to work with. Short prompts produce generic results.</li>
+    <li><strong>Too many conflicting ideas</strong> — Focus on one clear concept per image. Mixing too many themes confuses the output.</li>
+    <li><strong>Not using aspect ratio</strong> — Always add --ar 16:9 for landscape, --ar 9:16 for portrait, or --ar 1:1 for square.</li>
+    <li><strong>Ignoring variations</strong> — When you get a result you like, always click V1-V4 to explore variations before moving on.</li>
+    <li><strong>Not saving good prompts</strong> — Keep a personal collection of prompts that work well. They save enormous time later.</li>
+  </ul>
+
+  <div class="conc"><h2>🎯 You Are Ready to Start</h2><p>Midjourney has one of the steepest perceived learning curves of any AI tool — but in reality it becomes intuitive very quickly. Start with simple prompts, experiment with style keywords, and learn from what works. Within a week of regular practice you will be producing images that genuinely impress people.</p></div>
+
+  <div class="cta-wrap"><a href="https://midjourney.com" target="_blank" class="cta-btn">Start Creating with Midjourney →</a></div>
+  <p style="font-size:12px;color:#52525b;text-align:center">Last updated: March 15, 2026 · NeuralVault Editorial</p>
+</div>
+<div class="ft"><p>Discover more AI tools at NeuralVault</p><a href="/" class="cta-btn">← Explore Directory</a></div>
+<div class="an">✦ Some links are affiliate links. We may earn a commission at no extra cost to you.</div>
+</body>
+</html>
