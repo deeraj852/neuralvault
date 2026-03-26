@@ -810,7 +810,7 @@ footer{padding:64px 32px 40px;border-top:1px solid var(--border);position:relati
   <div class="hero-grid"></div>
   <div class="hero-badge">
     <span class="hero-badge-dot"></span>
-    <span><strong>2,400+</strong> AI tools catalogued · Updated daily</span>
+    <span><strong>174+</strong> AI tools catalogued · Updated daily</span>
   </div>
   <h1 class="hero-h1">
     Discover Every<br/>
@@ -876,15 +876,20 @@ footer{padding:64px 32px 40px;border-top:1px solid var(--border);position:relati
     <span class="search-ico">⌕</span>
   </div>
   <div class="filters" style="max-width:680px;margin:14px auto 0">
-    <button class="ftag on" onclick="setF(this,'all')">All Tools</button>
-    <button class="ftag" onclick="setF(this,'writing')">Writing</button>
-    <button class="ftag" onclick="setF(this,'image')">Image</button>
-    <button class="ftag" onclick="setF(this,'code')">Code</button>
-    <button class="ftag" onclick="setF(this,'video')">Video</button>
-    <button class="ftag" onclick="setF(this,'audio')">Audio</button>
-    <button class="ftag" onclick="setF(this,'research')">Research</button>
-    <button class="ftag" onclick="setF(this,'design')">Design</button>
-    <button class="ftag" onclick="setF(this,'productivity')">Productivity</button>
+    <button class="ftag on" onclick="setF(this,'all')">🔥 All Tools</button>
+    <button class="ftag" onclick="setF(this,'writing')">✍️ Writing</button>
+    <button class="ftag" onclick="setF(this,'image')">🎨 Image</button>
+    <button class="ftag" onclick="setF(this,'code')">💻 Code</button>
+    <button class="ftag" onclick="setF(this,'video')">🎬 Video</button>
+    <button class="ftag" onclick="setF(this,'audio')">🎙️ Audio</button>
+    <button class="ftag" onclick="setF(this,'research')">🔍 Research</button>
+    <button class="ftag" onclick="setF(this,'design')">🖌️ Design</button>
+    <button class="ftag" onclick="setF(this,'productivity')">⚡ Productivity</button>
+    <button class="ftag" onclick="setF(this,'cybersecurity')">🛡️ Cybersecurity</button>
+    <button class="ftag" onclick="setF(this,'qa')">✅ QA & Testing</button>
+    <button class="ftag" onclick="setF(this,'development')">🔧 Development</button>
+    <button class="ftag" onclick="setF(this,'devops')">⚙️ DevOps</button>
+    <button class="ftag" onclick="setF(this,'legal')">⚖️ Legal</button>
   </div>
 </div>
 
@@ -1006,15 +1011,20 @@ footer{padding:64px 32px 40px;border-top:1px solid var(--border);position:relati
   <div class="section-hdr">
     <div><span class="section-tag">🗂 Browse by Type</span><h2 class="section-h">Explore <span class="grad-text">Categories</span></h2></div>
   </div>
-  <div class="cat-grid">
-    <div class="card cat-card"><div class="cat-icon-wrap">🖼️</div><div class="cat-nm">Image Generation</div><div class="cat-cnt">248 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">✍️</div><div class="cat-nm">Writing & Copy</div><div class="cat-cnt">312 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">💻</div><div class="cat-nm">Code & Dev</div><div class="cat-cnt">186 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">🎬</div><div class="cat-nm">Video Generation</div><div class="cat-cnt">124 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">🎙️</div><div class="cat-nm">Audio & Voice</div><div class="cat-cnt">98 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">🔍</div><div class="cat-nm">Research & Search</div><div class="cat-cnt">143 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">🖌️</div><div class="cat-nm">Design & UI</div><div class="cat-cnt">207 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
-    <div class="card cat-card"><div class="cat-icon-wrap">📊</div><div class="cat-nm">Analytics & Data</div><div class="cat-cnt">165 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+  <div class="cat-grid" style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))">
+    <div class="card cat-card" onclick="filterByCategory('image')" style="cursor:pointer"><div class="cat-icon-wrap">🖼️</div><div class="cat-nm">Image Generation</div><div class="cat-cnt">12 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('writing')" style="cursor:pointer"><div class="cat-icon-wrap">✍️</div><div class="cat-nm">Writing & Copy</div><div class="cat-cnt">17 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('code')" style="cursor:pointer"><div class="cat-icon-wrap">💻</div><div class="cat-nm">Code & Dev</div><div class="cat-cnt">10 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('video')" style="cursor:pointer"><div class="cat-icon-wrap">🎬</div><div class="cat-nm">Video Generation</div><div class="cat-cnt">11 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('audio')" style="cursor:pointer"><div class="cat-icon-wrap">🎙️</div><div class="cat-nm">Audio & Voice</div><div class="cat-cnt">9 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('research')" style="cursor:pointer"><div class="cat-icon-wrap">🔍</div><div class="cat-nm">Research & Search</div><div class="cat-cnt">16 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('design')" style="cursor:pointer"><div class="cat-icon-wrap">🖌️</div><div class="cat-nm">Design & UI</div><div class="cat-cnt">10 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('productivity')" style="cursor:pointer"><div class="cat-icon-wrap">⚡</div><div class="cat-nm">Productivity</div><div class="cat-cnt">19 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('cybersecurity')" style="cursor:pointer"><div class="cat-icon-wrap">🛡️</div><div class="cat-nm">Cybersecurity</div><div class="cat-cnt">8 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('qa')" style="cursor:pointer"><div class="cat-icon-wrap">✅</div><div class="cat-nm">QA & Testing</div><div class="cat-cnt">8 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('development')" style="cursor:pointer"><div class="cat-icon-wrap">🔧</div><div class="cat-nm">Development</div><div class="cat-cnt">9 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('devops')" style="cursor:pointer"><div class="cat-icon-wrap">⚙️</div><div class="cat-nm">DevOps</div><div class="cat-cnt">8 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
+    <div class="card cat-card" onclick="filterByCategory('legal')" style="cursor:pointer"><div class="cat-icon-wrap">⚖️</div><div class="cat-nm">Legal AI</div><div class="cat-cnt">8 Tools</div><div class="cat-bar"><div class="cat-bar-f"></div></div></div>
   </div>
 </section>
 
@@ -1358,7 +1368,7 @@ const TOOLS_DB = [
   {id:45,name:'Stable Video',cat:'video',tag:'Free',badge:'b-fr',icon:'🎞️',desc:'Stability AI open source video generation. Run locally for unlimited free video generation.',price:'Free open source',platform:'Desktop · API',rating:'4.3',reviews:'2,800',visits:'1.1M/mo',url:'https://stability.ai'},
 
   // ── AUDIO & VOICE ──
-  {id:46,name:'ElevenLabs',cat:'audio',tag:'🔥 Hot',badge:'b-ht',icon:'🎙️',desc:'Ultra-realistic voice synthesis and cloning. 29 languages with emotional depth and natural delivery.',price:'Free · From $5/mo',platform:'Web · API',rating:'4.9',reviews:'7,800',visits:'5.1M/mo',url:'https://try.elevenlabs.io/16a2546b8cae'},
+  {id:46,name:'ElevenLabs',cat:'audio',tag:'🔥 Hot',badge:'b-ht',icon:'🎙️',desc:'Ultra-realistic voice synthesis and cloning. 29 languages with emotional depth and natural delivery.',price:'Free · From $5/mo',platform:'Web · API',rating:'4.9',reviews:'7,800',visits:'5.1M/mo',url:'https://elevenlabs.io'},
   {id:47,name:'Murf AI',cat:'audio',tag:'Free Plan',badge:'b-fr',icon:'🎵',desc:'Professional AI voice generation with 120+ voices across 20 languages for any content type.',price:'Free · From $19/mo',platform:'Web',rating:'4.5',reviews:'4,200',visits:'1.3M/mo',url:'https://murf.ai'},
   {id:48,name:'Play.ht',cat:'audio',tag:'Free Trial',badge:'b-fr',icon:'▶️',desc:'Text-to-speech with 900+ AI voices in 142 languages. Cloning available with just 30 seconds of audio.',price:'From $31/mo',platform:'Web · API',rating:'4.4',reviews:'3,900',visits:'1.1M/mo',url:'https://play.ht'},
   {id:49,name:'Resemble AI',cat:'audio',tag:'Custom',badge:'b-ed',icon:'🔊',desc:'Enterprise voice cloning and synthesis. Build custom voice models for your brand identity.',price:'From $29/mo',platform:'Web · API',rating:'4.5',reviews:'2,800',visits:'780K/mo',url:'https://resemble.ai'},
@@ -1461,6 +1471,74 @@ const TOOLS_DB = [
   // ── SPECIALIZED ──
   {id:119,name:'Wolfram Alpha',cat:'research',tag:'Free Plan',badge:'b-fr',icon:'🧮',desc:'Computational intelligence engine. Answers math, science, and data questions with expert precision.',price:'Free · From $7.25/mo',platform:'Web · Mobile · API',rating:'4.7',reviews:'14,200',visits:'8.4M/mo',url:'https://wolframalpha.com'},
   {id:120,name:'Humata AI',cat:'research',tag:'Free Plan',badge:'b-fr',icon:'📄',desc:'Chat with your documents using AI. Upload PDFs and ask questions to extract key information instantly.',price:'Free · From $14.99/mo',platform:'Web',rating:'4.5',reviews:'5,800',visits:'1.6M/mo',url:'https://humata.ai'},
+
+  // ── CYBERSECURITY ──
+  {id:121,name:'Darktrace',cat:'cybersecurity',tag:'Enterprise',badge:'b-ed',icon:'🛡️',desc:'AI-powered cyber defense platform. Detects and responds to threats in real time using self-learning AI.',price:'Custom pricing',platform:'Web · API · On-premise',rating:'4.7',reviews:'3,200',visits:'1.4M/mo',url:'https://darktrace.com'},
+  {id:122,name:'CrowdStrike AI',cat:'cybersecurity',tag:'Enterprise',badge:'b-ed',icon:'🦅',desc:'AI-native cybersecurity platform. Stops breaches with threat intelligence and behavioral AI analysis.',price:'From $299/mo',platform:'Web · Desktop · API',rating:'4.8',reviews:'5,100',visits:'2.8M/mo',url:'https://crowdstrike.com'},
+  {id:123,name:'SentinelOne',cat:'cybersecurity',tag:'Business',badge:'b-ed',icon:'🔵',desc:'Autonomous AI endpoint security. Detects, prevents, and responds to cyberattacks without human intervention.',price:'From $79/endpoint/yr',platform:'Web · Desktop',rating:'4.7',reviews:'4,200',visits:'1.9M/mo',url:'https://sentinelone.com'},
+  {id:124,name:'Vectra AI',cat:'cybersecurity',tag:'Enterprise',badge:'b-ed',icon:'🔍',desc:'AI threat detection and response for hybrid cloud environments. Finds hidden attackers automatically.',price:'Custom pricing',platform:'Web · Cloud · On-premise',rating:'4.6',reviews:'1,800',visits:'680K/mo',url:'https://vectra.ai'},
+  {id:125,name:'Snyk AI',cat:'cybersecurity',tag:'Free Plan',badge:'b-fr',icon:'🐍',desc:'AI-powered security for developers. Finds and fixes vulnerabilities in code, containers, and dependencies.',price:'Free · From $25/mo',platform:'Web · IDE · CLI',rating:'4.7',reviews:'6,400',visits:'2.1M/mo',url:'https://snyk.io'},
+  {id:126,name:'Abnormal Security',cat:'cybersecurity',tag:'Enterprise',badge:'b-ed',icon:'⚠️',desc:'AI email security that stops phishing, BEC, and account takeovers that traditional tools miss.',price:'Custom pricing',platform:'Web · Email',rating:'4.8',reviews:'2,100',visits:'780K/mo',url:'https://abnormalsecurity.com'},
+  {id:127,name:'Pentera',cat:'cybersecurity',tag:'Enterprise',badge:'b-ed',icon:'🔓',desc:'Automated security validation platform. Continuously tests your defenses like a real attacker would.',price:'Custom pricing',platform:'Web · On-premise',rating:'4.6',reviews:'1,400',visits:'420K/mo',url:'https://pentera.io'},
+  {id:128,name:'Orca Security',cat:'cybersecurity',tag:'Business',badge:'b-ed',icon:'🐋',desc:'AI cloud security platform. Full visibility into your cloud risks without agents or blind spots.',price:'Custom pricing',platform:'Web · Cloud',rating:'4.7',reviews:'1,900',visits:'560K/mo',url:'https://orca.security'},
+
+  // ── QA & TESTING ──
+  {id:129,name:'Testim',cat:'qa',tag:'Free Plan',badge:'b-fr',icon:'✅',desc:'AI-powered test automation. Creates stable end-to-end tests that adapt to UI changes automatically.',price:'Free · From $450/mo',platform:'Web · CLI',rating:'4.6',reviews:'2,800',visits:'890K/mo',url:'https://testim.io'},
+  {id:130,name:'Mabl',cat:'qa',tag:'Free Trial',badge:'b-fr',icon:'🤖',desc:'Intelligent test automation with AI. Self-healing tests that automatically adapt when your app changes.',price:'From $500/mo',platform:'Web · CLI · IDE',rating:'4.6',reviews:'1,900',visits:'640K/mo',url:'https://mabl.com'},
+  {id:131,name:'Applitools',cat:'qa',tag:'Free Plan',badge:'b-fr',icon:'👁️',desc:'AI-powered visual testing platform. Detects visual bugs across browsers and devices automatically.',price:'Free · Custom',platform:'Web · All browsers',rating:'4.7',reviews:'2,400',visits:'780K/mo',url:'https://applitools.com'},
+  {id:132,name:'Katalon',cat:'qa',tag:'Free Plan',badge:'b-fr',icon:'🔬',desc:'All-in-one AI test automation solution. Web, API, mobile, and desktop testing in one platform.',price:'Free · From $208/mo',platform:'Web · Desktop · CLI',rating:'4.5',reviews:'4,100',visits:'1.2M/mo',url:'https://katalon.com'},
+  {id:133,name:'Functionize',cat:'qa',tag:'Enterprise',badge:'b-ed',icon:'⚡',desc:'AI-powered autonomous testing platform. Tests write themselves using machine learning and NLP.',price:'Custom pricing',platform:'Web · Cloud',rating:'4.5',reviews:'1,200',visits:'380K/mo',url:'https://functionize.com'},
+  {id:134,name:'Sauce Labs',cat:'qa',tag:'Free Trial',badge:'b-fr',icon:'🧪',desc:'AI-powered continuous testing cloud. Run tests on 800+ browser and device combinations with AI insights.',price:'From $49/mo',platform:'Web · Cloud · API',rating:'4.5',reviews:'3,800',visits:'1.4M/mo',url:'https://saucelabs.com'},
+  {id:135,name:'BrowserStack',cat:'qa',tag:'Free Trial',badge:'b-fr',icon:'🌐',desc:'Cross-browser testing platform with AI-powered test observability and smart failure analysis.',price:'From $29/mo',platform:'Web · Cloud · API',rating:'4.6',reviews:'8,200',visits:'3.1M/mo',url:'https://browserstack.com'},
+  {id:136,name:'Diffblue',cat:'qa',tag:'Free Plan',badge:'b-fr',icon:'💙',desc:'AI that writes Java unit tests automatically. Generates and maintains tests for your entire codebase.',price:'Free · Custom',platform:'IDE · CLI',rating:'4.4',reviews:'1,100',visits:'320K/mo',url:'https://diffblue.com'},
+
+  // ── DEVELOPMENT ──
+  {id:137,name:'Vercel AI SDK',cat:'development',tag:'Free',badge:'b-fr',icon:'▲',desc:'Open source SDK for building AI-powered applications. Supports streaming, tool use, and all major LLMs.',price:'Free open source',platform:'Web · Node.js',rating:'4.8',reviews:'4,200',visits:'2.1M/mo',url:'https://sdk.vercel.ai'},
+  {id:138,name:'Supabase AI',cat:'development',tag:'Free Plan',badge:'b-fr',icon:'⚡',desc:'Open source Firebase alternative with built-in AI vector embeddings and semantic search capabilities.',price:'Free · From $25/mo',platform:'Web · API · CLI',rating:'4.7',reviews:'6,800',visits:'3.4M/mo',url:'https://supabase.com'},
+  {id:139,name:'Weaviate',cat:'development',tag:'Free Plan',badge:'b-fr',icon:'🔷',desc:'Open source AI-native vector database. Build semantic search and generative AI applications at scale.',price:'Free · From $25/mo',platform:'Web · API · Cloud',rating:'4.6',reviews:'2,800',visits:'980K/mo',url:'https://weaviate.io'},
+  {id:140,name:'Pinecone',cat:'development',tag:'Free Plan',badge:'b-fr',icon:'🌲',desc:'Managed vector database for AI applications. Build fast and accurate semantic search and RAG pipelines.',price:'Free · From $70/mo',platform:'Web · API',rating:'4.7',reviews:'3,400',visits:'1.4M/mo',url:'https://pinecone.io'},
+  {id:141,name:'Hugging Face',cat:'development',tag:'Free',badge:'b-fr',icon:'🤗',desc:'The GitHub for AI models. Access 400,000+ models, datasets, and spaces for any AI application.',price:'Free · From $9/mo',platform:'Web · API · CLI',rating:'4.8',reviews:'12,400',visits:'8.4M/mo',url:'https://huggingface.co'},
+  {id:142,name:'Replicate',cat:'development',tag:'Free Credits',badge:'b-fr',icon:'🔄',desc:'Run AI models in the cloud with one line of code. Access thousands of open source models via API.',price:'Pay per use',platform:'Web · API',rating:'4.7',reviews:'4,100',visits:'1.8M/mo',url:'https://replicate.com'},
+  {id:143,name:'Modal',cat:'development',tag:'Free Credits',badge:'b-fr',icon:'☁️',desc:'Run AI workloads in the cloud without infrastructure management. Scale from zero to millions instantly.',price:'Free credits · Pay per use',platform:'Python · API',rating:'4.7',reviews:'2,100',visits:'780K/mo',url:'https://modal.com'},
+  {id:144,name:'Together AI',cat:'development',tag:'Free Credits',badge:'b-fr',icon:'🤝',desc:'Run open source AI models with the fastest inference in the cloud. Better than OpenAI pricing.',price:'Free credits · Pay per use',platform:'Web · API',rating:'4.7',reviews:'2,800',visits:'980K/mo',url:'https://together.ai'},
+  {id:145,name:'Ollama',cat:'development',tag:'Free',badge:'b-fr',icon:'🦙',desc:'Run large language models locally on your machine. Complete privacy with no data leaving your computer.',price:'Free open source',platform:'Desktop · CLI',rating:'4.8',reviews:'8,900',visits:'3.2M/mo',url:'https://ollama.ai'},
+
+  // ── RESEARCH ──
+  {id:146,name:'ResearchRabbit',cat:'research',tag:'Free',badge:'b-fr',icon:'🐰',desc:'AI research discovery tool. Find relevant papers, visualize citation networks, and stay current in your field.',price:'Free forever',platform:'Web',rating:'4.7',reviews:'4,800',visits:'1.4M/mo',url:'https://researchrabbit.ai'},
+  {id:147,name:'Semantic Scholar',cat:'research',tag:'Free',badge:'b-fr',icon:'📚',desc:'AI-powered academic search engine. Find and understand scientific literature with AI-assisted reading.',price:'Free',platform:'Web · API',rating:'4.6',reviews:'6,200',visits:'3.8M/mo',url:'https://semanticscholar.org'},
+  {id:148,name:'SciSpace',cat:'research',tag:'Free Plan',badge:'b-fr',icon:'🔭',desc:'AI research assistant for reading and understanding scientific papers. Ask questions about any paper.',price:'Free · From $12/mo',platform:'Web · Browser',rating:'4.6',reviews:'5,400',visits:'2.1M/mo',url:'https://typeset.io'},
+  {id:149,name:'Iris AI',cat:'research',tag:'Business',badge:'b-ed',icon:'👁️',desc:'AI research workspace for teams. Automates literature reviews and connects insights across documents.',price:'From $49/mo',platform:'Web',rating:'4.5',reviews:'1,800',visits:'560K/mo',url:'https://iris.ai'},
+  {id:150,name:'Connected Papers',cat:'research',tag:'Free Plan',badge:'b-fr',icon:'🕸️',desc:'Visual tool for researchers to find and explore relevant papers. See connections between research.',price:'Free · From $3/mo',platform:'Web',rating:'4.6',reviews:'3,200',visits:'1.1M/mo',url:'https://connectedpapers.com'},
+  {id:151,name:'Mendeley AI',cat:'research',tag:'Free',badge:'b-fr',icon:'📖',desc:'AI-powered reference manager and academic social network. Organize, read, and cite research papers.',price:'Free',platform:'Web · Desktop · Mobile',rating:'4.4',reviews:'9,100',visits:'4.2M/mo',url:'https://mendeley.com'},
+  {id:152,name:'Zotero',cat:'research',tag:'Free',badge:'b-fr',icon:'📝',desc:'Free open source research assistant. Collect, organize, cite, and share research with AI assistance.',price:'Free',platform:'Web · Desktop · Browser',rating:'4.7',reviews:'11,200',visits:'3.8M/mo',url:'https://zotero.org'},
+  {id:153,name:'Scholarcy',cat:'research',tag:'Free Plan',badge:'b-fr',icon:'🎓',desc:'AI article summarizer for research papers. Creates smart flashcards and summaries from any paper.',price:'Free · From $9.99/mo',platform:'Web · Browser',rating:'4.5',reviews:'2,800',visits:'890K/mo',url:'https://scholarcy.com'},
+
+  // ── DEVOPS ──
+  {id:154,name:'GitHub Copilot for DevOps',cat:'devops',tag:'Free Plan',badge:'b-fr',icon:'⚙️',desc:'AI assistance for CI/CD pipelines, infrastructure as code, and DevOps workflows in GitHub Actions.',price:'Free for students · $10/mo',platform:'Web · CLI · IDE',rating:'4.7',reviews:'5,400',visits:'4.2M/mo',url:'https://github.com/features/copilot'},
+  {id:155,name:'Pulumi AI',cat:'devops',tag:'Free',badge:'b-fr',icon:'☁️',desc:'Generate infrastructure as code using natural language. Deploy to AWS, Azure, GCP with AI assistance.',price:'Free open source',platform:'Web · CLI · IDE',rating:'4.6',reviews:'2,400',visits:'980K/mo',url:'https://pulumi.com/ai'},
+  {id:156,name:'Terraform AI',cat:'devops',tag:'Free',badge:'b-fr',icon:'🔧',desc:'HashiCorp AI assistant for Terraform. Generate, explain, and debug infrastructure code with AI.',price:'Free',platform:'Web · CLI',rating:'4.6',reviews:'4,800',visits:'2.4M/mo',url:'https://hashicorp.com'},
+  {id:157,name:'Dynatrace AI',cat:'devops',tag:'Enterprise',badge:'b-ed',icon:'📊',desc:'AI-powered full-stack observability and AIOps platform. Automatically detects and resolves issues.',price:'Custom pricing',platform:'Web · Cloud · On-premise',rating:'4.7',reviews:'4,200',visits:'1.8M/mo',url:'https://dynatrace.com'},
+  {id:158,name:'DataDog AI',cat:'devops',tag:'Free Trial',badge:'b-fr',icon:'🐕',desc:'AI-powered monitoring and security platform. Get insights across metrics, traces, and logs automatically.',price:'From $15/host/mo',platform:'Web · API · Agent',rating:'4.7',reviews:'7,800',visits:'3.4M/mo',url:'https://datadoghq.com'},
+  {id:159,name:'New Relic AI',cat:'devops',tag:'Free Plan',badge:'b-fr',icon:'🔮',desc:'Observability platform with AI assistant. Ask questions about your system in plain English and get answers.',price:'Free · Pay per use',platform:'Web · API · Agent',rating:'4.6',reviews:'5,200',visits:'2.1M/mo',url:'https://newrelic.com'},
+  {id:160,name:'Harness AI',cat:'devops',tag:'Free Plan',badge:'b-fr',icon:'⚡',desc:'AI-powered DevOps platform. Automates CI/CD pipelines and uses AI to optimize deployments.',price:'Free · From $50/mo',platform:'Web · Cloud · API',rating:'4.6',reviews:'2,800',visits:'1.1M/mo',url:'https://harness.io'},
+  {id:161,name:'Mend.io',cat:'devops',tag:'Free Plan',badge:'b-fr',icon:'🛠️',desc:'AI application security for DevOps teams. Automatically fixes vulnerabilities in open source dependencies.',price:'Free · Custom',platform:'Web · IDE · CLI',rating:'4.5',reviews:'2,100',visits:'780K/mo',url:'https://mend.io'},
+
+  // ── WRITING (Additional) ──
+  {id:162,name:'Hemingway Editor',cat:'writing',tag:'Free',badge:'b-fr',icon:'📝',desc:'AI writing clarity tool. Highlights complex sentences, passive voice, and readability issues instantly.',price:'Free web · $19.99 desktop',platform:'Web · Desktop',rating:'4.6',reviews:'8,900',visits:'3.2M/mo',url:'https://hemingwayapp.com'},
+  {id:163,name:'ProWritingAid',cat:'writing',tag:'Free Plan',badge:'b-fr',icon:'✏️',desc:'Deep AI writing analysis tool. Checks grammar, style, readability and gives detailed writing reports.',price:'Free · From $30/mo',platform:'Web · Desktop · Browser',rating:'4.5',reviews:'7,400',visits:'2.4M/mo',url:'https://prowritingaid.com'},
+  {id:164,name:'Ink for All',cat:'writing',tag:'Free Plan',badge:'b-fr',icon:'🖋️',desc:'SEO-focused AI writing assistant. Optimizes content for search engines while maintaining quality.',price:'Free · From $49/mo',platform:'Web',rating:'4.3',reviews:'3,200',visits:'980K/mo',url:'https://inkforall.com'},
+  {id:165,name:'Longshot AI',cat:'writing',tag:'Free Trial',badge:'b-fr',icon:'🎯',desc:'AI writing tool for fact-checked long form content. Researches and writes accurate articles.',price:'From $19/mo',platform:'Web',rating:'4.3',reviews:'2,800',visits:'760K/mo',url:'https://longshot.ai'},
+  {id:166,name:'Hypotenuse AI',cat:'writing',tag:'Free Trial',badge:'b-fr',icon:'📦',desc:'AI content generation for ecommerce. Writes product descriptions, blog posts, and ad copy at scale.',price:'From $29/mo',platform:'Web',rating:'4.4',reviews:'2,100',visits:'680K/mo',url:'https://hypotenuse.ai'},
+
+  // ── LEGAL ──
+  {id:167,name:'Harvey AI',cat:'legal',tag:'Enterprise',badge:'b-ed',icon:'⚖️',desc:'AI built for elite law firms. Handles contract analysis, legal research, and document drafting at scale.',price:'Enterprise pricing',platform:'Web',rating:'4.7',reviews:'1,400',visits:'480K/mo',url:'https://harvey.ai'},
+  {id:168,name:'Casetext',cat:'legal',tag:'Business',badge:'b-ed',icon:'📜',desc:'AI legal research platform. CoCounsel performs research, drafts documents, and reviews contracts.',price:'From $150/mo',platform:'Web',rating:'4.6',reviews:'2,800',visits:'890K/mo',url:'https://casetext.com'},
+  {id:169,name:'Lexis+ AI',cat:'legal',tag:'Business',badge:'b-ed',icon:'🏛️',desc:'LexisNexis AI legal research tool. Trusted by law firms for reliable, cited legal research.',price:'Custom pricing',platform:'Web',rating:'4.5',reviews:'3,400',visits:'1.4M/mo',url:'https://lexisnexis.com'},
+  {id:170,name:'Spellbook',cat:'legal',tag:'Business',badge:'b-ed',icon:'📋',desc:'AI contract drafting and review tool for lawyers. Reviews and suggests changes directly in Word.',price:'From $99/mo',platform:'MS Word · Web',rating:'4.6',reviews:'1,800',visits:'560K/mo',url:'https://spellbook.legal'},
+  {id:171,name:'Ironclad AI',cat:'legal',tag:'Enterprise',badge:'b-ed',icon:'🔗',desc:'AI contract lifecycle management platform. Streamlines contract creation, review, and negotiation.',price:'Custom pricing',platform:'Web · API',rating:'4.6',reviews:'2,100',visits:'640K/mo',url:'https://ironcladapp.com'},
+  {id:172,name:'Luminance',cat:'legal',tag:'Enterprise',badge:'b-ed',icon:'💡',desc:'AI platform for legal document review and due diligence. Used by top law firms worldwide.',price:'Custom pricing',platform:'Web · On-premise',rating:'4.5',reviews:'1,200',visits:'380K/mo',url:'https://luminance.com'},
+  {id:173,name:'ContractPodAi',cat:'legal',tag:'Enterprise',badge:'b-ed',icon:'📄',desc:'End-to-end AI contract management. Automates the entire contract lifecycle from creation to renewal.',price:'Custom pricing',platform:'Web · API',rating:'4.4',reviews:'980',visits:'280K/mo',url:'https://contractpodai.com'},
+  {id:174,name:'Legalmation',cat:'legal',tag:'Business',badge:'b-ed',icon:'⚡',desc:'AI litigation tool that drafts legal documents in seconds. Automates routine litigation tasks.',price:'Custom pricing',platform:'Web',rating:'4.5',reviews:'760',visits:'220K/mo',url:'https://legalmation.com'},
 ];
 
 /* ══════════════════════════════════════════
@@ -1741,7 +1819,9 @@ document.addEventListener('DOMContentLoaded', () => {
     'Image Generation':'image','Writing & Copy':'writing',
     'Code & Dev':'code','Video Generation':'video',
     'Audio & Voice':'audio','Research & Search':'research',
-    'Design & UI':'design','Analytics & Data':'productivity'
+    'Design & UI':'design','Productivity':'productivity',
+    'Cybersecurity':'cybersecurity','QA & Testing':'qa',
+    'Development':'development','DevOps':'devops','Legal AI':'legal'
   };
   document.querySelectorAll('.cat-card').forEach(card => {
     const nm = card.querySelector('.cat-nm');
@@ -1934,7 +2014,7 @@ renderTools();
       <p>NeuralVault is the world's most curated AI tools directory — a free, independent platform dedicated to helping professionals, creators, students, and entrepreneurs discover the best artificial intelligence tools available today.</p>
       <p>We are a small, passionate team that believes the future belongs to those who understand and use AI effectively. Our mission is simple: make AI tools accessible, discoverable, and understandable for everyone — completely free.</p>
       <div class="about-stats">
-        <div class="astat"><div class="astat-n">2,400+</div><div class="astat-l">AI Tools Listed</div></div>
+        <div class="astat"><div class="astat-n">174+</div><div class="astat-l">AI Tools Listed</div></div>
         <div class="astat"><div class="astat-n">48K+</div><div class="astat-l">Monthly Users</div></div>
         <div class="astat"><div class="astat-n">120+</div><div class="astat-l">Categories</div></div>
       </div>
